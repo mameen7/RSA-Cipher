@@ -22,6 +22,6 @@ Make sure that you have python3 installed in your machine.
 
 DONATION
 
-Account Number: 2113100084
-Account Name: Ahmad Muhammad
-Bank Name: United Bank Of Africa (UBA)
+| Account Number: 2113100084 |--
+| Account Name: Ahmad Muhammad |--
+| Bank Name: United Bank Of Africa (UBA)|
