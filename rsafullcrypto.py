@@ -38,8 +38,11 @@ def main():
         else:
             print()
             message = input('Enter text\n     :')
-    
-        pubKeyFilename = 'al_sweigart_pubkey.txt'
+        try:
+            pubKeyFilename = input('Enter your public_key file name: ')
+        except:
+            print('Wrong file name')
+            sys.exit()
         print()
         print('Encrypting and writing to %s...' % (filename))
         encryptedText = encryptAndWriteToFile(filename, pubKeyFilename, message)
@@ -65,8 +68,11 @@ def main():
         else:
             print()
             message = input('Enter text\n     :')
-
-        privKeyFilename = 'al_sweigart_privkey.txt'
+        try:
+            privKeyFilename = input('Enter your private_key file name: ')
+        except:
+            print('Wrong file name')
+            sys.exit()
         print()
         print('Reading from %s and decrypting...' % (filename))
         decryptedText = readFromFileAndDecrypt(filename, privKeyFilename)
